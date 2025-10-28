@@ -1,0 +1,25 @@
+L = [3, 5, 4] ; L = L.sort()
+# sort() sortuje oryginalną listę i nic nie zwraca
+# natomiast sorted() zwraca nową posortowaną listę
+L = [3, 5, 4] ; L = sorted(L)
+
+x, y = 1, 2, 3
+# za dużo wartości dla zbyt małej liczby zmiennych
+x, y = 1, 2
+
+X = 1, 2, 3 ; X[1] = 4
+# taka forma tworzy krotkę, która jest niemodyfikowalna
+X = 1, 2, 3
+
+X = [1, 2, 3] ; X[3] = 4
+# taka forma zwróci błąd "IndexError: list assignment index out of range"
+X = [1, 2, 3] ; X.append(4)
+
+
+X = "abc" ; X.append("d")
+# ciąg znaków nie posiada metody append(), można użyć konkatenacji
+X = "abc" ; X += "d"
+
+L = list(map(pow, range(8)))
+# funkcja pow wymaga dwóch argumentów
+L = list(map(lambda x: pow(x, 2), range(8)))

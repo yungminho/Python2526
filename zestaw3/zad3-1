@@ -1,0 +1,28 @@
+x = 2; y = 3;
+if (x > y):
+    result = x;
+else:
+    result = y;
+
+for i in "axby": if ord(i) < 100: print (i)
+
+for i in "axby": print (ord(i) if ord(i) < 100 else i)
+
+
+###### Poprawiony kod #######
+
+x = 2; y = 3
+if x > y:
+    result = x
+else:
+    result = y
+
+#   niepotrzebne średniki na końcu lini oraz nawiasy w instrukcji warunkowej
+
+for i in "axby":
+    if ord(i) < 100: print (i)
+
+#   pętla for wymaga nowej lini, aby wiedzieć gdzie zaczyna się instrukcja warunkowa
+#   i gdzie kończy się pętla
+
+for i in "axby": print (ord(i) if ord(i) < 100 else i)
